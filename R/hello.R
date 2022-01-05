@@ -13,6 +13,9 @@
 #   Check Package:             'Ctrl + Shift + E'
 #   Test Package:              'Ctrl + Shift + T'
 
+
+
+
 #' @author Jamie Madden
 #' @importFrom utils head
 #'
@@ -32,8 +35,18 @@ check_1 <- function(df) {
 }
 
 
-#' @export
+#' Checking a dataframe
 #'
+#' This function simply prints the dimensions of the dataframe, the first 6
+#' rows of the dataframe and the names of the variables in the dataframe.
+#'
+#' @param df dataframe
+#' @param ... more dataframes to check at once
+#' @export
+#' @examples
+#' jamiecheck(mtcars)
+#' jamiecheck(mtcars, iris)
+
 
 jamiecheck <- function(df, ...) {
   a <- list(df, ...)
