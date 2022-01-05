@@ -13,7 +13,7 @@
 #   Check Package:             'Ctrl + Shift + E'
 #   Test Package:              'Ctrl + Shift + T'
 
-
+#' @author Jamie Madden
 #' @importFrom utils head
 #'
 #' @export
