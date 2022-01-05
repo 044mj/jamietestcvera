@@ -13,22 +13,33 @@
 #   Check Package:             'Ctrl + Shift + E'
 #   Test Package:              'Ctrl + Shift + T'
 
+
+#' @importFrom utils head
+#'
+#' @export
+
+
 hello <- function() {
   print("Hello, world!")
 }
+
+
 
 
 check_1 <- function(df) {
   a <- list(dim(df), head(df), names(df))
   return(a)
 }
-check_1(test)
+
+
+#' @export
+#'
 
 jamiecheck <- function(df, ...) {
-  a <- lst(df, ...)
+  a <- list(df, ...)
   b <- lapply(a, check_1)
   return(b)
 }
-check(test, badgers)
+
 
 
